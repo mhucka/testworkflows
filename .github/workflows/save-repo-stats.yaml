@@ -31,6 +31,8 @@ jobs:
     name: Save GitHub repo stats
     runs-on: ubuntu-24.04
     timeout-minutes: 15
+    permissions:
+      contents: write
     steps:
       - name: Check if the data branch exists in this repo
         id: check-branch-exists
